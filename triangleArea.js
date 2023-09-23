@@ -1,9 +1,9 @@
 function triangleArea(a, b, c) {
-    if (a + b < c & a + c < b & b + c < a) {
-        p = (a + b + c) / 2
-        s = Math.sqrt(p * (p - a) * (p - b) * (p - c))
-        console.log(s)
+    if (a + b > c && a + c > b && b + c > a) {
+        p = (a + b + c) / 2;
+        s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        return s;
+    } else {
+        return "è¯·è¾“å…¥æ­£ç¡®çš„ä¸‰è§’å½¢ä¸‰è¾¹é•¿ï¼";
     }
-    else console.log("ÇëÊäÈëÕıÈ·µÄÈı½ÇĞÎÈı±ß³¤£¡")
-    return
 }
