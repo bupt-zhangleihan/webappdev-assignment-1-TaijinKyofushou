@@ -1,16 +1,17 @@
-function isPrime(num) {
-    if (num <= 1) return false;
-    if (num <= 3) return true;
-    if (num % 2 === 0 || num % 3 === 0) return false;
-    for (var i = 5; i * i <= num; i += 6) {
-        if (num % i === 0 || num % (i + 2) === 0) return false;
+function isPrime(n) {
+    if (n <= 1) return false;
+    if (n <= 3) return true;
+    if (n % 2 === 0 || n % 3 === 0) return false;
+    for (var i = 5; i * i <= n; i += 6) //除了2和3之外的素数都可以表示成6k±1的形式
+    { 
+        if (n % i === 0 || n % (i + 2) === 0) return false;
     }
     return true;
 }
 
-function printPrimes(start, end) {
-    if (start <= 1) start = 2; 
-    for (i = start; i <= end; i++) {
+function printPrimes(startNum, endNum) {
+    if (startNum <= 1) startNum = 2; 
+    for (i = startNum; i <= endNum; i++) {
         if (isPrime(i)) {
             console.log(i);
         }
