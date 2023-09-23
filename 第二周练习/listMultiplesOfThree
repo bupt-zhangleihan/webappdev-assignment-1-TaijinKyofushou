@@ -1,0 +1,7 @@
+let multiplesOfThree = [];
+
+for (let i = 3; i <= 20; i += 3) {
+    multiplesOfThree.push(i)
+}
+
+console.log(multiplesOfThree)
