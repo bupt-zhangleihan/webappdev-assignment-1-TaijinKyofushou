@@ -9,28 +9,28 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 13% 70% 13%;
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 2%;
     padding: 10px;
 }
 
 .container {
     background-color: #eee;
-    height: 2200%;
+    height: 2500%;
     padding: 10px;
 }
 
 .plant-holder {
     position: relative;
-    height: 13%;
+    height: 14%;
 }
 
 .plant {
     position: absolute;
     max-width: 150%;
     max-height: 150%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .jar-walls {
@@ -42,7 +42,7 @@ h1 {
     bottom: 0.5%;
     left: 20%;
     opacity: 0.5;
-    z-index: 1;
+    z-index: 2;
 }
 
 .jar-top {
@@ -53,7 +53,7 @@ h1 {
     bottom: 80.5%;
     left: 25%;
     opacity: 0.7;
-    z-index: 1;
+    z-index: 2;
 }
 
 .jar-bottom {
@@ -75,7 +75,7 @@ h1 {
     bottom: 2%;
     left: 21%;
     opacity: 0.7;
-    z-index: -1;
+    z-index: 0;
 }
 
 .jar-glossy-long {
@@ -87,7 +87,7 @@ h1 {
     bottom: 11%;
     left: 6%;
     opacity: 0.8;
-    z-index: -1;
+    z-index: 2;
 }
 
 .jar-glossy-short {
@@ -99,5 +99,5 @@ h1 {
     bottom: 45%;
     left: 6%;
     opacity: 0.8;
-    z-index: -1;
+    z-index: 2;
 }
