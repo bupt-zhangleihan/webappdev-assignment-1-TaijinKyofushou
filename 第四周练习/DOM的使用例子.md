@@ -2,7 +2,7 @@
 ##### 2021212198  金语晗
 ---
 我找到了https://www.bilibili.com 网页，它使用了`document.createElement()`方法创建了一个`<script>`元素，并使用了`document.head`和`element.appendChild()`方法将该元素添加到文档中。  
-### 代码
+### 主页图片及代码
 ![bilibili主页源码](https://github.com/bupt-zhangleihan/webappdev-assignment-1-TaijinKyofushou/blob/main/%E7%AC%AC%E5%9B%9B%E5%91%A8%E7%BB%83%E4%B9%A0/bilibiliIndex.png "哔哩哔哩主页")
 ```javascript
 !function() {
