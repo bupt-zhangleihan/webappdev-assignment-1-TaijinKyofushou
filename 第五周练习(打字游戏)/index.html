@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Typing game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Typing game!</h1>
+  <p>Practice your typing skills with a quote from Sherlock Holmes. Click **start** to begin!</p>
+  <h3 id="quote"></h3> <!-- 显示要打印的格言 -->
+  <p id="message"></p> <!-- 显示打印的信息 -->
+  <div>
+    <input type="text" aria-label="current word" id="typed-value" /> <!-- 打字框 -->
+    <button type="button" id="start">Start</button> <!-- 开始按钮 -->
+  </div>
+
+  <!-- 恭喜对话框-->
+  <div id="messageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="messageText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
