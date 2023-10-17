@@ -17,7 +17,7 @@ const quoteElement = document.getElementById('quote');
 const typedValueElement = document.getElementById('typed-value');
 const messageModal = document.getElementById('messageModal'); // 恭喜窗格（模态窗） 
 const messageText = document.getElementById('messageText'); // 恭喜文本
-const closeButton = document.getElementsByClassName('close')[0]; // 关闭模态窗
+const closeButton = document.getElementsByClassName('close')[0]; // 模态窗关闭按钮
 /*
 var:具有函数作用域或全局作用域 没有块级作用域 可以被重复声明 可以在声明之前使用(变量提升) 不推荐使用
 let:具有块级作用域(只在该块内可见) 不能被重复声明 在声明之前使用会引发错误
