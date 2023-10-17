@@ -57,13 +57,11 @@ typedValueElement.addEventListener('input', () => {
     if (typedValue === currentWord && wordIndex === words.length - 1) {
       const elapsedTime = new Date().getTime() - startTime; // 计算输入时长
       typedValueElement.disabled = true; //关闭输入框 
-
       // 保存最高分到localStorage
       const highScore = localStorage.getItem('highScore');
       if(!highScore||elapsedTime < highScore){
         localStorage.setItem('highScore', elapsedTime);
       }
-      
       // 显示恭喜消息
       const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds. The best score is ${highScore / 1000} seconds.`;
       messageText.innerText = message;
